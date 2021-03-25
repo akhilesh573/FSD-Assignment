@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minimal To-do List And Task Manager App</title>
+    <!-- CSS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            background-image: url('img/img1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Quicksand';
+        }
+
+        .container {
+            margin: 0 auto;
+            min-width: 500px;
+            width: 45%;
+            text-align: left;
+            color: #3b3b3b;
+            font-weight: bold;
+          
+            width: 100%;
+            text-align: center;
+        }
+        textarea{
+            width: 25%;
+              border: 1px solid;
+              margin-left: -25%;
+        }
+
+        .todo {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin-left: 25%;
+            background-color: seashell;
+
+        }
+
+      li{
+        border: 1px solid black;
+        background-color: lavender;
+    padding-top: 1px;
+    font-size: 20px;
+    color: black;
+        }
+
+
+        ul {
+            padding: 0;
+            text-align: left;
+            list-style: none;
+        }
+
+        hr {
+            border-bottom: 0;
+            margin: 15px 0;
+        }
+
+        input[type="checkbox"] {
+            width: 30px;
+        }
+
+        .remove {
+            float: right;
+            cursor: pointer;
+            margin-right: 12px;
+            color: black;
+        }
+
+        .add {
+            background-color: darkslategrey;
+    color: whitesmoke;
+    border: 1px solid blanchedalmond;
+    height: 38px;
+    margin: 20px;
+    position: fixed;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="color: red;">TODO LIST</h1>
+        <div class="todo">
+            <ul id="list-items"></ul>
+        </div>
+
+        <br>
+        <div class="add-items">
+            <textarea name="" id="todo-list-item" cols="40" rows="4"
+                placeholder="What do you need to do today?"></textarea>
+            <button class="add" id="Addtask" type="submit">Add Task</button>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $('.add').click(function (event) {
+                var Task=document.getElementById('todo-list-item').value;
+                if(Task)
+                {
+                    $('#list-items').append("<li><input class='checkbox' type='checkbox'/>" + Task + "<a class='remove'>x</a><hr></li>");
+             
+                }
+                else{
+                    alert('Task Should not be empty');
+                }
+
+                  $('#todo-list-item').val("");
+
+
+            });
+
+            $(document).on('change', '.checkbox', function () {
+                if ($(this).attr('checked')) {
+                    $(this).removeAttr('checked');
+                }
+                else {
+                    $(this).attr('checked', 'checked');
+                }
+
+                $(this).parent().toggleClass('completed');
+
+            });
+
+            $(document).on('click', '.remove', function () {
+                $(this).parent().remove();
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <style>
+          .jumbotron {
+      background-size: contain;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+
+    body{
+    background:chocolate;
+}
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: red;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: green;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color:orangered;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: brown;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid black;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: darkmagenta;
+  
+}
+.navcolor{
+        color: #1d7bd7;
+    }
+     </style>
+    <title>About me</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg   navbar-dark navcolor">
+        <a class="navbar-brand" href="#">PortFolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="demo1.html">Login </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="demo2.html">Register</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="demo3.html">Contact Me</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+        
+        <div class="jumbotron">
+            <div class="box sixteen-nine content">
+            
+            <h1>Akhilesh Dadge</h1>
+            <p>Hi, I am Akhilesh from karnataka. My hobbies are coding, playing Cricket and listening to motivational speech .</p>
+          </div>
+        </div> 
+          
+        
+        <!------ Include the above in your HEAD tag ---------->
+        
+        <div class="container emp-profile">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-img">
+                                    <img src="img/person1.png" alt=""/>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile-head">
+                                            <h5>
+                                                Akhilesh Dadge
+                                            </h5>
+                                            <h6>
+                                                Full Stack Developer
+                                            </h6>
+                                            <p class="proile-rating">RATINGS : <span>10/10</span></p>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-work">
+                                   
+                                    <p>SKILLS</p>
+                                    <a href="">Web Designer</a><br/>
+                                    <a href="">Web Developer</a><br/>
+                                    <a href="">Design Engineer</a><br/>
+                                    <a href="">Java Developer</a><br/>
+                                    <a href="">SQL,DBMS Developer</a><br/>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="tab-content profile-tab" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>User Id</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Akhilesh.1@ness.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Name</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Akhilesh Dadge</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Email</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>akhileshdadge@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Phone</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>8123357424</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Profession</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Full Stack Developer</p>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Experience</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Fresher</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Monthly</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>25k/month</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Total Projects</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>2+</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>English Level</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Medium</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Availability</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>2 months</p>
+                                                    </div>
+                                                </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label>Your Bio</label><br/>
+                                                <p>Your detail description</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>           
+                </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  </body>
+</html>
